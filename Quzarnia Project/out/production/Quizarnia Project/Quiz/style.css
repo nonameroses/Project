@@ -1,0 +1,35 @@
+.buttonBarItem:hover{
+-fx-background-color:#778899;
+-fx-border-color: BLUE;
+-fx-border-width: 0px 0px 3px 0px;
+}
+
+.buttonBarItem:pressed{
+-fx-background-color:#778899;
+-fx-border-color: BLUE;
+fx-scale-y: 0.9;
+-fx-scale-x: 0.9;
+-fx-border-width: 0px 0px 3px 0px;
+}
+
+buttonBarItem:active {
+  fx-scale-y: 0.9;
+  -fx-scale-x: 0.9;
+}
+
+
+.submitButton:hover{
+-fx-background-color:#778899;
+-fx-border-color: BLUE;
+-fx-border-width: 0px 0px 5px 0px;
+}
+
+.submitButton:pressed{
+-fx-background-color:#778899;
+-fx-border-color: BLUE;
+fx-scale-y: 1.1;
+-fx-scale-x: 1.1;
+-fx-border-width: 0px 0px 3px 0px;
+}
+
+

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Quiz.Menus.MainMenuController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="600.0" minWidth="10.0" prefWidth="467.2000732421875" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="128.60001220703126" minHeight="10.0" prefHeight="38.999997711181635" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="330.99999618530273" minHeight="10.0" prefHeight="308.60000228881836" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="52.79996337890623" minHeight="10.0" prefHeight="52.00001220703126" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <VBox prefHeight="360.0" prefWidth="600.0" GridPane.rowIndex="1">
+         <children>
+            <AnchorPane prefHeight="326.0" prefWidth="600.0" style="-fx-background-color: #daa520;">
+               <children>
+                  <Button layoutX="247.0" layoutY="44.0" mnemonicParsing="false" onAction="#beginQuiz" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: #5f9ea0; -fx-border-color: #000000;" styleClass="buttonBarItem" text="Begin Quiz!" />
+                  <Button layoutX="247.0" layoutY="102.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: #5f9ea0; -fx-border-color: #000000;" styleClass="buttonBarItem" text="Options" />
+                  <Button layoutX="247.0" layoutY="162.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: #5f9ea0; -fx-border-color: #000000;" styleClass="buttonBarItem" text="Leaderboard" />
+                  <Button fx:id="closeButton" layoutX="247.0" layoutY="226.0" mnemonicParsing="false" onAction="#exitMainMenu" prefHeight="46.0" prefWidth="106.0" style="-fx-background-color: #5f9ea0; -fx-border-color: #000000;" styleClass="buttonBarItem" text="Exit" />
+                  <Label layoutX="7.0" layoutY="21.0" prefHeight="46.0" prefWidth="218.0" text="Welcome To Quzarnia!">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox prefHeight="14.0" prefWidth="600.0" style="-fx-background-color: #b8860b;" />
+      <VBox prefHeight="0.0" prefWidth="600.0" style="-fx-background-color: #b8860b; -fx-border-color: #b8860b;" GridPane.rowIndex="2">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="203.0" layoutY="16.0" text="Application Developed by CyberEagle™" />
+               </children>
+            </AnchorPane>
+         </children></VBox>
+   </children>
+</GridPane>
